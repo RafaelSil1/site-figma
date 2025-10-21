@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
-
 
 header {
     display: flex;
@@ -12,14 +14,17 @@ header {
     background-color: #125773;
 }
 
-header img {
-    width: 10%;
+
+.logo img {
+    width: 35%;
 }
 
-nav ul, li, a{
+
+.navegador ul, li, a{
     display: flex;
     text-decoration: none;
     list-style: none;
+    font-family: "playwrite DE SAS";
     color: white;
     gap: 15px;
 }

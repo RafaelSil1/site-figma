@@ -8,26 +8,81 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     top: 0;
     left: 0;
     z-index: 999;
-    background-color:#23518C;
+    background-color: #23518C;
 }
-
 
 .logo img {
     width: 35%;
 }
 
-
-.navegador ul, li, a{
+.navegador ul,
+li,
+a {
     display: flex;
     text-decoration: none;
     list-style: none;
     font-family: "playwrite DE SAS";
     color: white;
-    gap: 15px;
+    gap: 25px;
+}
+
+.banner {
+    background-image: url(img/desktop.png);
+    background-size: cover;
+    background-position: top;
+    padding: 15rem;
+}
+
+
+/* @media vai servir para definir configurações/estilizações para tamanhos de tela em especifico */
+
+@media (max-width:1000px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    .banner {
+        background-image: url(img/desktop.png);
+        padding: 8rem;
+    }
+}
+
+
+@media (max-width:700px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    .banner {
+        background-image: url(img/tablet.png);
+        padding: 6.5rem;
+    }
+}
+
+
+@media (max-width:500px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner {
+        background-image: url(img/mobile.png);
+        padding: 7rem;
+    }
 }

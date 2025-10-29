@@ -40,6 +40,51 @@ a {
     padding: 15rem;
 }
 
+.text-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.pai-caixas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #23518C;
+    background-color: aliceblue;
+    padding: 1rem;
+    gap: 50px;
+    width: 20%;
+    height: 12rem;
+}
+
+.p-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.p-button button{ 
+    width: 50%;
+    background-color: #23518C;
+    color: white;
+}
+
 
 /* @media vai servir para definir configurações/estilizações para tamanhos de tela em especifico */
 
@@ -78,6 +123,7 @@ a {
     }
 
     nav {
+        /*aqui estamos ocultando o meu para versoes mobile*/
         display: none;
     }
 

@@ -15,7 +15,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: #23518C;
+    background-color: #004aaa;
 }
 
 .logo img {
@@ -40,68 +40,143 @@ a {
     padding: 15rem;
 }
 
+.section-02 {
+    background-color: rgb(255, 255, 255);
+}
+
 .text-content {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+.text-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #004aaa;
+}
+
+.text-content span {
+    color: rgb(255, 0, 34);
 }
 
 .pai-caixas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
     padding: 3rem;
+}
+
+.icon i {
+    font-size: 1.7rem;
+    color: #004aaad5;
 }
 
 .icon {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
     gap: 15px;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid #23518C;
+    align-items: center;
+    border: 3px solid #004aaa;
     background-color: aliceblue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
     padding: 1rem;
-    gap: 50px;
-    width: 20%;
+    width: 30%;
     height: 12rem;
+    transition: 0.8s;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box p {
+    margin-bottom: 30px;
 }
 
 .p-button {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 30px;
 }
 
 .p-button button{ 
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
     width: 50%;
-    background-color: #23518C;
+    background-color: #004aaa;
     color: white;
+}
+
+.caixa3 {
+    align-items: center;
+    background-image: url(img/criptomoeda.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #004aaa;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
+    padding: 1rem;
+    width: 30%;
+    height: 12rem;
+    transition: 0.8s;
+}
+
+.caixa3:hover{
+    transform: scale(1.1);
+}
+
+.cx3 {
+    display:flex ;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+
+.cx3 p {
+    color: white;
+}
+
+.cx3 button{ 
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    background-color: #004aaa;
+    color: white;
+}
+
+.caixa4 {
+    border: 3px solid #004aaa;
+    background-image: url(img/finance.png);
+    background-size: cover;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
+    padding: 1rem;
+    width: 30%;
+    height: 12rem;
+    transition: 0.8s;
+}
+
+.caixa4:hover{
+    transform: scale(1.1);
 }
 
 
 /* @media vai servir para definir configurações/estilizações para tamanhos de tela em especifico */
 
-@media (max-width:1000px) {
-
-    header {
-        padding: 1rem;
-    }
-
-    .banner {
-        background-image: url(img/desktop.png);
-        padding: 8rem;
-    }
-}
 
 
-@media (max-width:700px) {
+@media (max-width:768px) {
 
     header {
         padding: 1rem;
@@ -111,10 +186,50 @@ a {
         background-image: url(img/tablet.png);
         padding: 6.5rem;
     }
+
+    nav {
+        /*aqui estamos ocultando o meu para versoes mobile*/
+        display: none;
+    }
+
+    .section-02 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pai-caixas {
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
+
+    .box {
+        width: 50%;
+    }
+
+    .box:hover {
+        transform: none;
+    }
+
+    .tree {
+        display: flex;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .box2 {
+        width: 50%;
+    }
+
+    .box2:hover {
+        transform: none;
+    }
 }
 
 
-@media (max-width:500px) {
+
+@media (max-width:320px) {
 
     header {
         display: flex;
@@ -130,5 +245,35 @@ a {
     .banner {
         background-image: url(img/mobile.png);
         padding: 7rem;
+    }
+
+    .section-02 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .pai-caixas {
+        width: 100%;
+    }
+
+    .box {
+        width: 60%;
+    }
+
+    .box:hover {
+        transform: none;
+    }
+
+    .tree {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 60%;
+    }
+
+    .box2:hover {
+        transform: none;
     }
 }

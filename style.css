@@ -77,7 +77,7 @@ a {
 .icon {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 30px;
     gap: 15px;
 }
@@ -88,8 +88,8 @@ a {
     background-color: aliceblue;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
     padding: 1rem;
-    width: 30%;
-    height: 12rem;
+    width: 25%;
+    height: 18rem;
     transition: 0.8s;
 }
 
@@ -110,6 +110,7 @@ a {
 .p-button button{ 
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     padding: 5px;
     width: 50%;
     background-color: #004aaa;
@@ -124,8 +125,8 @@ a {
     border: 3px solid #004aaa;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
     padding: 1rem;
-    width: 30%;
-    height: 12rem;
+    width: 25%;
+    height: 18rem;
     transition: 0.8s;
 }
 
@@ -136,7 +137,7 @@ a {
 .cx3 {
     display:flex ;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 100px;
     align-items: center;
     text-align: center;
     gap: 30px;
@@ -150,6 +151,7 @@ a {
 .cx3 button{ 
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     padding: 5px;
     width: 50%;
     background-color: #004aaa;
@@ -158,12 +160,13 @@ a {
 
 .caixa4 {
     border: 3px solid #004aaa;
-    background-image: url(img/finance.png);
+    background-image: url(img/banner-caixa.jpg);
     background-size: cover;
+    background-position: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.445);
     padding: 1rem;
-    width: 30%;
-    height: 12rem;
+    width: 25%;
+    height: 18rem;
     transition: 0.8s;
 }
 
@@ -191,7 +194,17 @@ a {
     gap: 10px;
 }
 
+.text h2{
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
 .btn-inpt input{
+    outline: none;
     padding: 4px;
     width: 300px;
 }
@@ -206,29 +219,49 @@ a {
 }
 
 footer {
-    margin: 50px;
-}
-
-.anco a, ul, li {
     display: flex;
     justify-content: center;
-    padding: 2px;
-    gap: 100px;
-    color: #004aaa;
+    align-items: center;
+    background-color: #004aaa;
+    gap: 150px;
+    padding: 2rem;
+}
+
+footer a {
+    transition: 0.8s;
+}
+
+footer a:hover {
+    transform: scale(1.2);
 }
 
 .icones {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
     margin-bottom: 15px;
     gap: 40px;
     font-size: 3rem;
 }
 
+.icones i {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.card1 a, .card2 a, .card3 a {
+    font-size: 1.3rem;
+}
+
 
 /* @media vai servir para definir configurações/estilizações para tamanhos de tela em especifico */
-
 
 
 @media (max-width:768px) {
@@ -272,6 +305,9 @@ footer {
         margin-top: 50px;
         width: 100%;
     }
+    .caixa4 {
+        margin-bottom: 50px;
+    }
 
     .box2 {
         width: 50%;
@@ -279,6 +315,11 @@ footer {
 
     .box2:hover {
         transform: none;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 25px;
     }
 }
 

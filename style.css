@@ -41,7 +41,7 @@ a {
     padding: 15rem;
 }
 
-.section-02 {
+main {
     background-color: #636363;
 }
 
@@ -59,8 +59,9 @@ a {
 }
 
 .text-content span {
-    color: rgb(207, 207, 207);
+    color: rgb(255, 255, 255);
 }
+
 
 .pai-caixas {
     display: flex;
@@ -68,7 +69,6 @@ a {
     justify-content: center;
     gap: 50px;
     padding: 3rem;
-    background-color: #636363;
 }
 
 .icon i {
@@ -95,7 +95,7 @@ a {
     transition: 0.8s;
 }
 
-.box:hover{
+.box:hover {
     transform: scale(1.1);
 }
 
@@ -111,7 +111,7 @@ a {
 
 }
 
-.p-button button{ 
+.p-button button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -134,12 +134,12 @@ a {
     transition: 0.8s;
 }
 
-.caixa3:hover{
+.caixa3:hover {
     transform: scale(1.1);
 }
 
 .cx3 {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     margin-top: 100px;
     align-items: center;
@@ -152,7 +152,7 @@ a {
     color: white;
 }
 
-.cx3 button{ 
+.cx3 button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -174,7 +174,7 @@ a {
     transition: 0.8s;
 }
 
-.caixa4:hover{
+.caixa4:hover {
     transform: scale(1.1);
 }
 
@@ -190,7 +190,8 @@ a {
 }
 
 
-.text, .btn-inpt {
+.text,
+.btn-inpt {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -198,7 +199,7 @@ a {
     gap: 10px;
 }
 
-.text h2{
+.text h2 {
     margin-bottom: 20px;
 }
 
@@ -207,7 +208,7 @@ a {
     margin-bottom: 10px;
 }
 
-.btn-inpt input{
+.btn-inpt input {
     outline: none;
     padding: 4px;
     width: 300px;
@@ -253,19 +254,19 @@ footer a:hover {
     color: #ffffff;
 }
 
-.card1, .card2, .card3 {
+.card1,
+.card2,
+.card3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 20%;
+    border-bottom: 1px solid white;
 }
 
-.card1, .card2, .card3 {
-
-    border-bottom: 1px solid white;
-} 
-
-.card1 a, .card2 a, .card3 a {
+.card1 a,
+.card2 a,
+.card3 a {
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
@@ -303,11 +304,15 @@ footer a:hover {
     }
 
     .box {
-        width: 50%;
+        width: 70%;
     }
 
     .box:hover {
         transform: none;
+    }
+
+    .box2 {
+        width: 70%;
     }
 
     .tree {
@@ -315,21 +320,42 @@ footer a:hover {
         margin-top: 50px;
         width: 100%;
     }
+
     .caixa4 {
         margin-bottom: 50px;
     }
 
-    .box2 {
-        width: 50%;
-    }
 
     .box2:hover {
         transform: none;
     }
 
     footer {
-        flex-direction: column;
+        display: flex;
+        font-size: 1rem;
         gap: 25px;
+    }
+
+    footer a:hover {
+        transform: none;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        border: none;
+    }
+    
+    .card1 a,
+    .card2 a,
+    .card3 a {
+        margin-left: 20px;
+        font-size: 0.7rem;
+    }
+
+    .icones {
+        font-size: 1.5rem;
+        gap: 10px;
     }
 }
 
@@ -364,7 +390,7 @@ footer a:hover {
     }
 
     .box {
-        width: 60%;
+        width: 80%;
     }
 
     .box:hover {
@@ -375,11 +401,18 @@ footer a:hover {
         width: 100%;
     }
 
-    .box2 {
-        width: 60%;
-    }
-
     .box2:hover {
         transform: none;
+    }
+
+    footer {
+        gap: 30px;
+    }
+
+     .icones {
+        margin-left: 15px;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 10px;
     }
 }

@@ -19,6 +19,27 @@ header {
     border-bottom: #ffffff solid 1px;
 }
 
+
+/* MENU MOBILE */
+
+/* icones do menu hamburguer */
+.menu-btn  {  
+    display: none;  /* torna o item invisivel / só aparece no mobile */
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-btn {
+    display: flex;
+}
+
+
+.nav-menu {
+    display: none;
+}
+
+
 .logo img {
     width: 35%;
 }
@@ -286,9 +307,13 @@ footer a:hover {
         padding: 6.5rem;
     }
 
-    nav {
+    .menu-desktop {
         /*aqui estamos ocultando o meu para versoes mobile*/
         display: none;
+    }
+
+    .menu-btn {
+        display: flex;
     }
 
     .section-02 {
@@ -369,9 +394,13 @@ footer a:hover {
         padding: 5px;
     }
 
-    nav {
+    .menu-desktop {
         /*aqui estamos ocultando o meu para versoes mobile*/
         display: none;
+    }
+    
+    .menu-btn {
+        display: flex;
     }
 
     .banner {

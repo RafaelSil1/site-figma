@@ -30,10 +30,6 @@ header {
     color: white;
 }
 
-.menu-btn {
-    display: flex;
-}
-
 
 .nav-menu {
     display: none;
@@ -302,6 +298,10 @@ footer a:hover {
         padding: 1rem;
     }
 
+    .logo  {
+        width: 300px;
+    }
+
     .banner {
         background-image: url(img/tablet.png);
         padding: 6.5rem;
@@ -314,6 +314,24 @@ footer a:hover {
 
     .menu-btn {
         display: flex;
+    }
+
+    .nav-menu {
+        position: absolute; 
+        top: -30rem; /* Começa escondido acima*/
+        left: -2rem; /* Ajustando o alinhamento do menu*/
+        width: 100%; /* Largura total da caixa do menu*/
+        height: 30vh; /*Altura da caixa*/
+        background-color: #636363; 
+        transition: to 0.3s ease-in-out; /* transição suave*/
+        display: flex; /*Alinhamento dos items*/
+        justify-content: center; /* Alinhamento Horizontal*/
+        align-items: center; /* Alinhamento Vertical*/
+    }
+
+    .show { /* Essa class será usada pelo javascript para ação do menu */
+        top: 90px; /* desce suavemente quando é ativado */
+        left: -2rem; /* posicionamento do menu */
     }
 
     .section-02 {
@@ -392,6 +410,10 @@ footer a:hover {
         display: flex;
         justify-content: center;
         padding: 5px;
+    }
+    
+    .logo  {
+        width: 250px;
     }
 
     .menu-desktop {
